@@ -176,3 +176,9 @@ gulp.task('default', () => {
     runSequence(['clean', 'wiredep'], 'build', resolve);
   });
 });
+
+//gh-pages deploy
+gulp.task('deploy', ['default'], () => {
+  return gulp.src('dist/**/*')
+    .pipe($.ghPages());
+});

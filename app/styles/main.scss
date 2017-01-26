@@ -2,6 +2,8 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "bower_components/neat/app/assets/stylesheets/_neat.scss";
 // endbower
 
 .browserupgrade {
@@ -56,6 +58,7 @@ body {
   .btn {
     font-size: 21px;
     padding: 14px 24px;
+    @include border-color(blue blue blue blue);
   }
 }
 
