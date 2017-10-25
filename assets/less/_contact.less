@@ -1,0 +1,36 @@
+section#contact {
+  overflow: auto;
+  margin: 1em auto 2em auto;
+  .column {
+    width: 50%;
+    float: left;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  input[type=submit] {
+    .btn(@color__secondary, black);
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .links {
+    padding-left: 2em;
+    li {
+      margin-bottom: 1em;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  @media screen and (max-width: @size__mobile) {
+    .column {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .links {
+      padding-left: 0;
+    }
+  }
+}

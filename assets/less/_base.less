@@ -1,0 +1,22 @@
+* {
+  color: @color__text;
+  font-family: 'Josefin Sans', sans-serif; //I like this font, has a clean but retro aethtics reminisent of Century Gothic, Futura and Gill Sans
+  box-sizing: border-box;
+}
+
+body {
+  font-size: @font__size;
+}
+
+.container {
+  width: @size__container;
+  margin: 0 auto;
+  display: block;
+  padding: 0 1em;
+}
+
+@media screen and (max-width: @size__container) { //base media query
+  .container {
+    width: 100%;
+  }
+}

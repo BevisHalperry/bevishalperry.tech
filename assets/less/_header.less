@@ -1,0 +1,29 @@
+@header__padding: 0.5em;
+
+header {
+  background: @color__primary;
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    padding: @header__padding*1.5 @header__padding;
+    &.brand {
+      font-weight: bold;
+      margin-left: -@header__padding;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: @color__white--off;
+    }
+  }
+  @media screen and (max-width: @size__mobile) {
+    li:not(.brand) {
+      display: none;
+    }
+  }
+}

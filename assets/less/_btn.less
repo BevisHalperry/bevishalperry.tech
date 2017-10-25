@@ -1,0 +1,16 @@
+.btn(@bg: white, @text: @color__text) {
+  padding: 0.5em 1em;
+  background: @bg;
+  color: @text;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0.25em;
+  &:hover {
+    background: darken(@bg, 10%);
+    cursor: pointer;
+  }
+}
+
+.btn {
+  .btn();
+}

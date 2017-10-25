@@ -1,0 +1,16 @@
+// I love LESS's indent child selectors!
+form {
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 0.25em;
+    background: white;
+    border: 1px solid @color__white--off;
+    padding: 0.5em 0.75em;
+    &:focus {
+      border-color: @color__secondary;
+      outline: 0;
+    }
+  }
+}
